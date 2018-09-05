@@ -1,0 +1,17 @@
+---
+version: '3'
+
+volumes:
+  nltk_data:
+
+services:
+  compute:
+    image: danrasband/w266
+    command: ['bash']
+    ports:
+      - 8896:8896
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/compute/w266
+      - nltk_data:/root/nltk_data
