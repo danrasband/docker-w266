@@ -9,7 +9,8 @@ services:
     image: danrasband/w266
     command: ['bash']
     ports:
-      - 8896:8896
+      - 8896:8896 # Jupyter Notebook
+      - 6006:6006 # Tensorboard
     stdin_open: true
     tty: true
     volumes:
