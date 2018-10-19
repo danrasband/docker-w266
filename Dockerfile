@@ -21,3 +21,4 @@ RUN $HOME/anaconda3/bin/pip install --upgrade pip \
 COPY support/jupyter_notebook_config.py /root/.jupyter/
 
 RUN apt update && apt install -y graphviz && rm -rf /var/lib/apt/lists/*
+RUN $HOME/anaconda3/bin/pip install --upgrade graphviz

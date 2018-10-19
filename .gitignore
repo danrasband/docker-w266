@@ -114,3 +114,5 @@ venv.bak/
 2018-fall-main
 
 tmp
+
+/tensorflow

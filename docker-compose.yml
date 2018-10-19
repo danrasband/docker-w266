@@ -6,7 +6,7 @@ volumes:
 
 services:
   compute:
-    image: danrasband/w266
+    image: danrasband/w266:latest
     command: ['bash']
     ports:
       - 8896:8896 # Jupyter Notebook
